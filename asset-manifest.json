@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/face-detection-app/static/css/main.8f1e1918.css",
+    "main.js": "/face-detection-app/static/js/main.a22d1687.js",
+    "index.html": "/face-detection-app/index.html",
+    "main.8f1e1918.css.map": "/face-detection-app/static/css/main.8f1e1918.css.map",
+    "main.a22d1687.js.map": "/face-detection-app/static/js/main.a22d1687.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f1e1918.css",
+    "static/js/main.a22d1687.js"
+  ]
+}
