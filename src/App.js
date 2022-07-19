@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Navigation from "./components/Navigation/Navigation";
+import Logo from "./components/Logo/Logo";
+import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
+import Rank from "./components/Rank/Rank";
+import ParticlesBackground from "./components/Particles/ParticlesBackground";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+	constructor() {
+		super();
+		this.state = {
+			input: "",
+		};
+	}
+	onButtonSubmit = () => {
+		console.log("clicked");
+	};
+	onInputChange = (event) => {
+		console.log(event.target.value);
+	};
+
+	render() {
+		return (
+			<div>
+				<ParticlesBackground />
+				<Navigation />
+				<Logo />
+				<Rank />
+				<ImageLinkForm
+					onInputChange={this.onInputChange}
+					onButtonSubmit={this.onButtonSubmit}
+				/>
+			</div>
+		);
+	}
 }
 
 export default App;
