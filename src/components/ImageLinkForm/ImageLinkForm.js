@@ -1,6 +1,6 @@
 import React from "react";
 import "./ImageLinkForm.css";
-const ImageLinkForm = ({ onButtonSubmit, onInputChange }) => {
+const ImageLinkForm = ({ onButtonSubmit, onInputChange, inputURL }) => {
 	return (
 		<div style={{ textAlign: "center" }}>
 			<p className='f4'>
@@ -12,6 +12,7 @@ const ImageLinkForm = ({ onButtonSubmit, onInputChange }) => {
 						className='f4 pa2 w-70 center'
 						type={"text"}
 						onChange={onInputChange}
+						value={inputURL}
 					/>
 					<button
 						style={{ cursor: "pointer" }}
